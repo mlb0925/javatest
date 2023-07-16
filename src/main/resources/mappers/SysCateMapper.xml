@@ -1,0 +1,11 @@
+<mapper namespace="com.example.mappers.SysCateMapper">
+
+    <select id="findAll" resultType="SysCate">
+        SELECT * FROM sys_cate
+    </select>
+
+    <select id="findByParentId" resultType="SysCate">
+        SELECT * FROM sys_cate WHERE parent_id = #{parentId}
+    </select>
+
+</mapper>

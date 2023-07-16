@@ -1,0 +1,7 @@
+<mapper namespace="com.example.mappers.CategoryMapper">
+
+    <select id="findBySysCateId" resultType="Category">
+        SELECT * FROM category WHERE sys_cate_id = #{sysCateId}
+    </select>
+
+</mapper>
